@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import ThemeToggler from "./components/ThemeToggler";
-import { Header } from "./pages";
+import { About, Header } from "./pages";
 import ThemeContext from "./ThemeContext";
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className={`${theme}`}>
         <Header />
+        <About />
       </div>
     </ThemeContext.Provider>
   );
