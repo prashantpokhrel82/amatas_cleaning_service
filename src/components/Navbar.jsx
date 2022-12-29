@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import ThemeContext from "../ThemeContext";
 import ThemeToggler from "./ThemeToggler";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
@@ -23,8 +22,6 @@ const NavLinks = () => (
 );
 
 const Navbar = () => {
-  const theme = useContext(ThemeContext);
-
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <Wrapper className="flex__center">
@@ -60,7 +57,6 @@ const Navbar = () => {
 export default Navbar;
 
 const Wrapper = styled.nav`
-  padding: 2rem 4rem;
   justify-content: space-between;
   position: relative;
 

@@ -16,7 +16,7 @@
 }
 
 .theme-light {
-  background: var(--primary-100);
+  background: var(--grey-100);
   color: var(--primary-900);
 }
 
@@ -27,10 +27,6 @@
 
 .theme-dark a:hover {
   color: var(--primary-100);
-}
-
-.primary-gradient-bg {
-  background: var(--primary-gradient);
 }
 
 .primary-gradient-text {
@@ -54,21 +50,30 @@
 }
 
 .btn {
-  padding: 0.8rem 2.5rem;
+  padding: 1rem 2.5rem;
   border: transparent;
   outline: none;
   border-radius: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--grey-100);
   background: var(--primary-500);
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.6);
-  transition: var(--transition);
+  transition: var(--transition-300);
+}
+
+.primary-gradient-bg {
+  background: var(--primary-gradient);
 }
 
 .btn:hover {
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.6);
   background: var(--primary-600);
   cursor: pointer;
+}
+
+.btn.primary-gradient-bg:hover {
+  background: var(--primary-gradient-inverse);
 }
 
 .section__padding {
