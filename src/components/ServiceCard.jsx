@@ -42,7 +42,7 @@ const Wrapper = styled.article`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background: var(--grey-100);
+    background: var(--color-white);
     border-radius: 1rem 1rem 0 0;
     transition: var(--transition-300);
   }
