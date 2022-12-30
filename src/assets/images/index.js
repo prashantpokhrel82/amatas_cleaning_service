@@ -5,6 +5,7 @@ import otherservice1 from "./otherservice1.png";
 import otherservice2 from "./otherservice2.png";
 import otherservice3 from "./otherservice3.png";
 import gurantee from "./gurantee.jpg";
+import happiness from "./happiness.svg";
 
 export {
   service1,
@@ -14,4 +15,5 @@ export {
   otherservice2,
   otherservice3,
   gurantee,
+  happiness,
 };
