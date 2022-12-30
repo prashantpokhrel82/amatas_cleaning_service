@@ -62,6 +62,8 @@ const StyledLabel = styled.label`
     left: 3.5px;
     top: 3.5px;
     border-radius: 50%;
+    transition: var(--transition);
+    z-index: 1;
   }
 
   input:checked ~ div {

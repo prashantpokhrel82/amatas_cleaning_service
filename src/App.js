@@ -11,7 +11,7 @@ const App = () => {
   };
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className={`${theme}`}>
+      <div className="app" data-theme={theme}>
         <Header />
         <About />
       </div>
