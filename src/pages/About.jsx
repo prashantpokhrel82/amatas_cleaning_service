@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 const About = () => {
   return (
-    <Wrapper className="section__padding flex__center">
+    <Wrapper
+      className="section__padding section__width flex__center"
+      id="about"
+    >
       <h3>
         welcome to{" "}
         <span className="gradient-text primary-gradient-text">
@@ -26,15 +29,6 @@ export default About;
 
 const Wrapper = styled.section`
   margin: 0 auto;
-  width: 70%;
   flex-direction: column;
   text-align: center;
-
-  @media (max-width: 1200px) {
-    width: 80%;
-  }
-
-  @media (max-width: 800px) {
-    width: 100%;
-  }
 `;

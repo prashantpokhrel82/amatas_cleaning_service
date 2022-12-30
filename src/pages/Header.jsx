@@ -68,6 +68,7 @@ const Wrapper = styled.header`
     align-items: flex-start;
     gap: 3rem;
   }
+
   .right {
     flex: 1;
     display: flex;

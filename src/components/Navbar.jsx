@@ -10,13 +10,13 @@ const NavLinks = () => (
       <a href="#">Home</a>
     </li>
     <li>
-      <a href="#">About Us</a>
+      <a href="#about">About Us</a>
     </li>
     <li>
-      <a href="#">Services</a>
+      <a href="#services">Services</a>
     </li>
     <li>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </li>
   </>
 );
@@ -79,10 +79,6 @@ const Wrapper = styled.nav`
     cursor: pointer;
   }
 
-  li:hover {
-    color: var(--primary-500);
-  }
-
   .hamburger {
     display: none;
     font-size: 1.5rem;
@@ -94,7 +90,8 @@ const Wrapper = styled.nav`
     position: absolute;
     top: -100px;
     left: 0;
-    background: var(--primary-900);
+    background: var(--primary-100);
+    color: var(--primary-900);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -104,22 +101,20 @@ const Wrapper = styled.nav`
     list-style: none;
     font-size: 2rem;
     opacity: 0;
+    z-index: 2;
   }
 
   .mobile-menu li {
     padding: 1rem 0;
     text-align: center;
     width: 100%;
-    background: rgba(208, 230, 255, 0.2);
+    background: var(--primary-200);
     border-radius: 2rem;
   }
 
   .mobile-menu li:hover {
-    background: rgba(208, 230, 255, 0.5);
-  }
-
-  .mobile-menu a {
-    color: #fff;
+    background: var(--primary-300);
+    transition: var(--transition);
   }
 
   .hamburger-close {
@@ -127,7 +122,7 @@ const Wrapper = styled.nav`
     top: 25px;
     right: 25px;
     font-size: 2rem;
-    color: #fff;
+    color: var(--primary-900);
     cursor: pointer;
   }
 
