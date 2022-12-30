@@ -7,6 +7,12 @@ import otherservice3 from "./otherservice3.png";
 import gurantee from "./gurantee.jpg";
 import happiness from "./happiness.svg";
 
+import testimonial1 from "./testimonials/testimonial1.jpg";
+import testimonial2 from "./testimonials/testimonial2.jpg";
+import testimonial3 from "./testimonials/testimonial3.jpg";
+import testimonial4 from "./testimonials/testimonial4.jpg";
+import testimonial5 from "./testimonials/testimonial5.jpg";
+
 export {
   service1,
   service2,
@@ -16,4 +22,9 @@ export {
   otherservice3,
   gurantee,
   happiness,
+  testimonial1,
+  testimonial2,
+  testimonial3,
+  testimonial4,
+  testimonial5,
 };

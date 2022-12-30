@@ -1,4 +1,4 @@
 import Navbar from "./Navbar";
 import ServiceCard from "./ServiceCard";
-
-export { Navbar, ServiceCard };
+import TestimonialCard from "./TestimonialCard";
+export { Navbar, ServiceCard, TestimonialCard };

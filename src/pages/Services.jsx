@@ -5,7 +5,7 @@ import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
-    <Wrapper id="#services" className="flex__center">
+    <Wrapper id="services" className="flex__center">
       <h1>
         <span className="gradient-text primary-gradient-text">AMATAS</span>{" "}
         Services

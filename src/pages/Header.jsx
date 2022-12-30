@@ -16,7 +16,7 @@ const Header = () => {
             <span className="gradient-text primary-gradient-text">
               trusted professionals{" "}
             </span>
-            for your home and office. We clean{" "}
+            for your home. We clean{" "}
             <span className="gradient-text primary-gradient-text">
               The best
             </span>
@@ -49,7 +49,6 @@ export default Header;
 const Wrapper = styled.header`
   padding: 2rem 4rem;
   width: 100%;
-  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url(${headerImg});
   background-position: center;
@@ -72,6 +71,10 @@ const Wrapper = styled.header`
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
+
+    h1 {
+      color: var(--color-white);
+    }
   }
 
   a,

@@ -19,12 +19,10 @@ const About = () => {
       className="section__padding section__width flex__center slide-up"
       id="about"
     >
-      <h3>
+      <h2>
         welcome to{" "}
-        <span className="gradient-text primary-gradient-text">
-          amatas services
-        </span>
-      </h3>
+        <span className="gradient-text primary-gradient-text">AMATAS</span>
+      </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quaerat
         sequi est corrupti iste ratione, eum earum consequatur adipisci

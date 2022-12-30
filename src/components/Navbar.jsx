@@ -29,7 +29,7 @@ const Navbar = () => {
 
       <div>
         <ThemeToggler />
-        <ul>
+        <ul className="desktop-menu">
           <NavLinks />
         </ul>
         <AiOutlineAlignRight
@@ -66,12 +66,27 @@ const Wrapper = styled.nav`
 
   div {
     display: flex;
+    align-items: center;
     gap: 3rem;
   }
 
   ul {
     display: flex;
+    align-items: center;
     gap: 2rem;
+  }
+
+  .desktop-menu li:last-child {
+    background: var(--primary-500);
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: var(--transition-300);
+    box-shadow: 0 0 2px var(--grey-500);
+  }
+
+  .desktop-menu li:last-child:hover {
+    background: var(--primary-600);
   }
 
   li {
