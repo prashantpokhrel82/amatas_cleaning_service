@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import ThemeToggler from "./components/ThemeToggler";
-import { About, Header } from "./pages";
+import { About, Header, Services } from "./pages";
 import ThemeContext from "./ThemeContext";
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
       <div className="app" data-theme={theme}>
         <Header />
         <About />
+        <Services />
       </div>
     </ThemeContext.Provider>
   );

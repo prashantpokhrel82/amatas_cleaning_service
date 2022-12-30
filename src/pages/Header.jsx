@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Navbar } from "../components";
 import styled from "styled-components";
-import banner from "../assets/images/banner.png";
 import bannerDark from "../assets/images/banner-dark.png";
+import headerImg from "../assets/images/header.jpg";
 import ThemeContext from "../ThemeContext";
 
 const Header = () => {
@@ -10,8 +10,8 @@ const Header = () => {
   return (
     <Wrapper>
       <Navbar />
-      <section id="home">
-        <div className="left">
+      <section id="home" className="flex__center">
+        <div className="left slide-right">
           <h1>
             <span className="gradient-text primary-gradient-text">
               trusted professionals{" "}
@@ -36,11 +36,8 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div className="right">
-          <img
-            src={theme.theme === "theme-light" ? banner : bannerDark}
-            alt="cleaning"
-          />
+        <div className="right slide-left">
+          <img src={bannerDark} alt="cleaning" />
         </div>
       </section>
     </Wrapper>
@@ -52,8 +49,16 @@ export default Header;
 const Wrapper = styled.header`
   padding: 2rem 4rem;
   width: 100%;
-
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(${headerImg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 25px var(--primary-900);
   section {
+    margin-top: 2rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +72,11 @@ const Wrapper = styled.header`
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
+  }
+
+  a,
+  p {
+    color: var(--color-white);
   }
 
   .right {
@@ -86,6 +96,10 @@ const Wrapper = styled.header`
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+  }
+
+  @media (max-width: 1200px) {
+    height: unset;
   }
 
   @media (max-width: 600px) {
