@@ -34,7 +34,9 @@ a {
 :root {
   --font-body: "Poppins", "sans-serif";
 
-  --hsl-value: 189;
+  --hsl-value: 212;
+
+  --color-white: hsl(var(--hsl-value), 100%, 95%);
 
   --primary-100: hsl(var(--hsl-value), 100%, 95%);
   --primary-200: hsl(var(--hsl-value), 98%, 83%);
@@ -137,8 +139,10 @@ h5 {
   }
 
   h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
 }
 

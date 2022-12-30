@@ -58,7 +58,6 @@ export default Navbar;
 
 const Wrapper = styled.nav`
   justify-content: space-between;
-  position: relative;
 
   h1 {
     font-size: 2rem;
@@ -87,10 +86,10 @@ const Wrapper = styled.nav`
 
   .mobile-menu {
     padding: 2rem;
-    position: absolute;
-    top: -100px;
+    position: fixed;
+    top: 0;
     left: 0;
-    background: var(--primary-100);
+    background: var(--primary-200);
     color: var(--primary-900);
     height: 100vh;
     width: 100%;
@@ -108,18 +107,18 @@ const Wrapper = styled.nav`
     padding: 1rem 0;
     text-align: center;
     width: 100%;
-    background: var(--primary-200);
+    background: var(--primary-300);
     border-radius: 2rem;
   }
 
   .mobile-menu li:hover {
-    background: var(--primary-300);
+    background: var(--primary-400);
     transition: var(--transition);
   }
 
   .hamburger-close {
     position: absolute;
-    top: 25px;
+    top: 50px;
     right: 25px;
     font-size: 2rem;
     color: var(--primary-900);
