@@ -20,7 +20,7 @@ const ServiceCard = ({ title, content, icon, img }) => {
 
 export default ServiceCard;
 
-const Wrapper = styled.div`
+const Wrapper = styled.article`
   width: 400px;
   min-width: 350px;
   padding: 0 0 1rem;
@@ -77,10 +77,6 @@ const Wrapper = styled.div`
   :hover {
     background: var(--primary-200);
     transform: scale(1.03);
-  }
-
-  :hover p {
-    color: var(--primary-900);
   }
 
   @media (max-width: 450px) {
