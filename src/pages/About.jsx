@@ -51,6 +51,9 @@ const Wrapper = styled.section`
   margin: 0 auto;
   flex-direction: column;
   text-align: center;
+  p {
+    margin: 2rem 0;
+  }
 
   .video {
     margin-top: 2rem;
