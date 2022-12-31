@@ -50,4 +50,12 @@ const Wrapper = styled.div`
     margin: 4rem 0;
     text-align: center;
   }
+
+  @media (max-width: 800px) {
+    padding: 2rem;
+
+    h1 {
+      margin: 2rem 0;
+    }
+  }
 `;

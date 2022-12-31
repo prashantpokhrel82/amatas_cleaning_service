@@ -27,7 +27,7 @@ const Navbar = () => {
     <Wrapper className="flex__center">
       <h1>Amatas</h1>
 
-      <div>
+      <div className="nav">
         <ThemeToggler />
         <ul className="desktop-menu">
           <NavLinks />
@@ -151,6 +151,13 @@ const Wrapper = styled.nav`
 
     .mobile-menu {
       opacity: 1;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .nav {
+      flex-direction: column-reverse;
+      gap: 1rem;
     }
   }
 `;

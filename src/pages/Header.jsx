@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { Navbar } from "../components";
 import styled from "styled-components";
-import bannerDark from "../assets/images/banner-dark.png";
+import { banner, bannerDark } from "../assets/images";
 import headerImg from "../assets/images/header.jpg";
 import ThemeContext from "../ThemeContext";
 
 const Header = () => {
   const theme = useContext(ThemeContext);
   return (
-    <Wrapper>
+    <Wrapper theme={theme.theme}>
       <Navbar />
       <section id="home" className="flex__center">
         <div className="left slide-right">
@@ -37,7 +37,10 @@ const Header = () => {
           </div>
         </div>
         <div className="right slide-left">
-          <img src={bannerDark} alt="cleaning" />
+          <img
+            src={theme.theme === "theme-light" ? banner : bannerDark}
+            alt="cleaning"
+          />
         </div>
       </section>
     </Wrapper>
@@ -49,7 +52,10 @@ export default Header;
 const Wrapper = styled.header`
   padding: 2rem 4rem;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background: ${(props) =>
+      props.theme === "theme-light"
+        ? "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))"
+        : "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))"},
     url(${headerImg});
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +79,7 @@ const Wrapper = styled.header`
     gap: 3rem;
 
     h1 {
-      color: var(--color-white);
+      color: var(--primary-900);
     }
   }
 

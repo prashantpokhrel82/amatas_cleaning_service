@@ -107,7 +107,6 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    flex-wrap: wrap-reverse;
     gap: 1rem;
   }
 
@@ -208,6 +207,7 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     color: var(--primary-900);
+    text-align: center;
   }
 
   .icon {
@@ -217,6 +217,20 @@ const Wrapper = styled.section`
     margin-right: 1rem;
     font-size: 1.5rem;
     color: var(--primary-500);
+  }
+
+  @media (max-width: 950px) {
+    .right {
+      margin: 0;
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    form input,
+    form textarea {
+      font-size: 1rem;
+    }
   }
 
   @media (max-width: 600px) {
