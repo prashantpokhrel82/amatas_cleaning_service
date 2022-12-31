@@ -41,6 +41,8 @@ const Wrapper = styled.article`
 
   :hover {
     transform: scale(1.03);
+    box-shadow: 0 0 5px var(--primary-600), 0 0 8px var(--primary-700),
+      0 0 10px var(--primary-800);
   }
 
   .top {
