@@ -60,7 +60,9 @@ a {
   --grey-900: #0e0e0e;
 
   --color-golden: #ffdf00;
-
+  --color-facebook: #3b5998;
+  --color-instagram: #dc2743;
+  --color-twitter: #00acee;
   --primary-gradient: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
   --secondary-gradient: linear-gradient(90deg, #ff7170 2.34%, #ffe57f 100.78%);
   --primary-gradient-inverse: linear-gradient(
