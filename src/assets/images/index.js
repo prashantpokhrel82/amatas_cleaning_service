@@ -13,6 +13,9 @@ import testimonial3 from "./testimonials/testimonial3.jpg";
 import testimonial4 from "./testimonials/testimonial4.jpg";
 import testimonial5 from "./testimonials/testimonial5.jpg";
 
+import banner from "./banner.png";
+import bannerDark from "./banner-dark.png";
+
 export {
   service1,
   service2,
@@ -27,4 +30,6 @@ export {
   testimonial3,
   testimonial4,
   testimonial5,
+  banner,
+  bannerDark,
 };
