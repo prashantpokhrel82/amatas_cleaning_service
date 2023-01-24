@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+
 import {
   FaMapMarkerAlt,
   FaFacebookF,
@@ -11,6 +14,44 @@ import { AiFillMail, AiFillMessage } from "react-icons/ai";
 import { RiInstagramFill } from "react-icons/ri";
 
 const Contact = () => {
+  const initialFormState = {
+    name: "",
+    email: "",
+    message: "",
+  };
+  const form = useRef();
+  const [formData, setFormData] = useState(initialFormState);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          if (response.status === 200) {
+            toast.success(
+              "Thankyou for contacting. We will get back to you as soon as possible."
+            );
+            setFormData(initialFormState);
+          }
+        },
+        (error) => {
+          toast.error(
+            `Sorry your message couldn't be sent now. Please try again later. ${error.message}`
+          );
+        }
+      );
+  };
   return (
     <Wrapper id="contact" className="section__padding flex__center">
       <h2>
@@ -20,18 +61,34 @@ const Contact = () => {
       </h2>
       <div className="row">
         <div className="left">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div>
               <span className="ico">
                 <FaUserAlt />
               </span>
-              <input type="text" name="name" id="name" placeholder="Name" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
             </div>
             <div>
               <span className="ico">
                 <AiFillMail />
               </span>
-              <input type="email" name="email" id="email" placeholder="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
             </div>
             <div>
               <span className="ico">
@@ -42,13 +99,21 @@ const Contact = () => {
                 name="message"
                 id="message"
                 placeholder="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
               />
             </div>
-            <button className="btn">Send Message</button>
+            <button type="submit" className="btn">
+              Send Message
+            </button>
           </form>
           <ul className="social-links">
             <li>
-              <a href="#" className="facebook">
+              <a
+                href="https://www.facebook.com/profile.php?id=100082801047101"
+                className="facebook"
+              >
                 <FaFacebookF />
               </a>
             </li>
@@ -82,7 +147,7 @@ const Contact = () => {
               <span className="icon">
                 <AiFillMail />
               </span>
-              <span>amatas@gmail.com</span>
+              <span>services.amatas@gmail.com</span>
             </p>
           </div>
         </div>
@@ -160,8 +225,7 @@ const Wrapper = styled.section`
     :focus {
       border-bottom: 2px solid var(--primary-900);
       cursor: pointer;
-      box-shadow: 0 0 5px var(--primary-600), 0 0 8px var(--primary-700),
-        0 0 10px var(--primary-800);
+      box-shadow: 0 0 5px var(--primary-600);
     }
 
     ::placeholder {

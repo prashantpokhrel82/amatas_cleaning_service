@@ -34,7 +34,7 @@ a {
 :root {
   --font-body: "Poppins", "sans-serif";
 
-  --hsl-value: 212;
+  --hsl-value: 205;
 
   --color-white: hsl(var(--hsl-value), 100%, 95%);
   --color-dark: hsl(var(--hsl-value), 100%, 5%);

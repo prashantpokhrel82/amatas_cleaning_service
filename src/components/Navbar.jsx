@@ -4,19 +4,47 @@ import ThemeToggler from "./ThemeToggler";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 
-const NavLinks = () => (
+const NavLinks = ({ toggleMenu, setToggleMenu }) => (
   <>
     <li>
-      <a href="#">Home</a>
+      <a
+        href="#"
+        onClick={() => {
+          setToggleMenu(!toggleMenu);
+        }}
+      >
+        Home
+      </a>
     </li>
     <li>
-      <a href="#about">About Us</a>
+      <a
+        href="#about"
+        onClick={() => {
+          setToggleMenu(!toggleMenu);
+        }}
+      >
+        About Us
+      </a>
     </li>
     <li>
-      <a href="#services">Services</a>
+      <a
+        href="#services"
+        onClick={() => {
+          setToggleMenu(!toggleMenu);
+        }}
+      >
+        Services
+      </a>
     </li>
     <li>
-      <a href="#contact">Contact</a>
+      <a
+        href="#contact"
+        onClick={() => {
+          setToggleMenu(!toggleMenu);
+        }}
+      >
+        Contact
+      </a>
     </li>
   </>
 );
@@ -25,7 +53,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <Wrapper className="flex__center">
-      <h1>Amatas</h1>
+      <h1>Amatas Cleaning</h1>
 
       <div className="nav">
         <ThemeToggler />
@@ -46,7 +74,7 @@ const Navbar = () => {
                 setToggleMenu(!toggleMenu);
               }}
             />
-            <NavLinks />
+            <NavLinks toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
           </div>
         )}
       </div>
@@ -60,7 +88,7 @@ const Wrapper = styled.nav`
   justify-content: space-between;
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
   }
 

@@ -9,6 +9,7 @@ import {
   Contact,
 } from "./pages";
 import ThemeContext from "./ThemeContext";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   const [theme, setTheme] = useState("theme-light");
@@ -24,6 +25,7 @@ const App = () => {
         <Gurantee />
         <Testimonials />
         <Contact />
+        <Toaster />
       </div>
     </ThemeContext.Provider>
   );

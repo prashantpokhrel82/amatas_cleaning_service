@@ -22,15 +22,15 @@ const Header = () => {
             </span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
-            quibusdam ducimus earum vero, debitis repellendus dolorum
-            consequatur, doloremque eum corrupti, inventore eos blanditiis a
-            saepe id eligendi ipsum delectus quia.
+            It is unquestionably worthwhile to choose Amatas Cleaning Service
+            Tasmania! Amatas Cleaning Company provides this high-quality
+            cleaning service in Tamania, and a large number of favourable
+            customer testimonials attest to the company's stellar reputation.
           </p>
           <div className="buttons">
-            <button type="button" className="btn primary-gradient-bg">
+            <a href="#contact" className="btn primary-gradient-bg">
               Book A Clean
-            </button>
+            </a>
             <a href="#services" className="btn">
               All Services
             </a>
@@ -38,7 +38,8 @@ const Header = () => {
         </div>
         <div className="right slide-left">
           <img
-            src={theme.theme === "theme-light" ? banner : bannerDark}
+            src={bannerDark}
+            // src={theme.theme === "theme-light" ? banner : bannerDark}
             alt="cleaning"
           />
         </div>
@@ -54,13 +55,13 @@ const Wrapper = styled.header`
   width: 100%;
   background: ${(props) =>
       props.theme === "theme-light"
-        ? "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))"
+        ? "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))"
         : "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))"},
     url(${headerImg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 25px var(--primary-900);
+  box-shadow: 0 0 50px 10px var(--primary-900);
   section {
     margin-top: 2rem;
     height: 100%;

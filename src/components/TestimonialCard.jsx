@@ -36,7 +36,7 @@ const Wrapper = styled.article`
   background: var(--primary-200);
   box-shadow: 0 0 5px var(--grey-500);
   border-radius: 1rem;
-  height: 450px;
+  min-height: 500px;
   transition: var(--transition-300);
 
   :hover {

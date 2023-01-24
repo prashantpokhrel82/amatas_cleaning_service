@@ -11,7 +11,7 @@ const Gurantee = () => {
         </h2>
         <p>
           Your complete satisfaction is our ultimate quality benchmark. That's
-          why every Whizz service is assured with our 100% Happiness Guarantee.
+          why every AMATAS service is assured with our 100% Happiness Guarantee.
           <br />
           <br />
           This means that if you are in any way dissatisfied with your service,

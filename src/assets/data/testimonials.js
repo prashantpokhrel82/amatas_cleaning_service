@@ -31,7 +31,7 @@ export const testimonialsData = [
     suburb: "Sydney",
     state: "NSW",
     rating: 5,
-    feedback: `Whizz is my favourite app! Guaranteed an excellent clean every time! Super convenient as well, cleaners allocated within hours of `,
+    feedback: `Amatas is my favourite app! Guaranteed an excellent clean every time! Super convenient as well, cleaners allocated within hours `,
     img: testimonial3,
   },
   {
@@ -40,7 +40,7 @@ export const testimonialsData = [
     suburb: "Albert Park",
     state: "VIC",
     rating: 5,
-    feedback: `I use Whizz for a regular weekly clean of my family home. Always arrives on time and completes all cleaning to a great standard.`,
+    feedback: `I use Amatas for a regular weekly clean of my family home. Always arrives on time and completes all cleaning to a great standard.`,
     img: testimonial4,
   },
   {
@@ -58,7 +58,8 @@ export const testimonialsData = [
     suburb: "Launceston",
     state: "TAS",
     rating: 5,
-    feedback: `I use Whizz for a regular weekly clean of my family home. Always arrives on time and completes all cleaning to a great standard.`,
+    feedback: `The cleaners were very kind and easy to direct in the direction I wanted the cleaning to go. They fulfilled all of their promises, and I was pleased with the work they completed. I endorse Anish and his team. It was wonderful that they brought all of their stuff.
+`,
     img: testimonial1,
   },
   {
@@ -67,7 +68,8 @@ export const testimonialsData = [
     suburb: "Mowbray",
     state: "TAS",
     rating: 5,
-    feedback: `Good service and value. They were on time and achieved much more than I expected. I would hire them again. Very happy with the results.`,
+    feedback: `I received assistance from Amatas Cleaning Service when I required an urgent cleaning. I'm really grateful for that! I'd definitely give them another call. They were incredibly helpful, and I'm happy I found them!
+`,
     img: testimonial2,
   },
   {
@@ -76,7 +78,7 @@ export const testimonialsData = [
     suburb: "Prospect",
     state: "TAS",
     rating: 5,
-    feedback: `Good service and value. They were on time and achieved much more than I expected. I would hire them again. Very happy with the results.`,
+    feedback: `Raisa first came to clean my house just once. The job was of high quality. I now have her to clean my home once a week. She always looks after everything and leaves the place spotless and smelling wonderful. I was very impressed with her. Good service and value. They were on time and achieved much more than I expected. I would hire them again. Very happy with the results.`,
     img: testimonial3,
   },
   {
@@ -85,7 +87,8 @@ export const testimonialsData = [
     suburb: "Hobart",
     state: "TAS",
     rating: 5,
-    feedback: `Brilliant! Really quick and a good price for the quality. Carpet looks better than when we moved in, no stains or marks left! The staff are also really friendly. I'd use this company again for sure.`,
+    feedback: `For an End of Lease cleaning, I recently hired Amatas Cleaning Service, Launceston. The cleaning services were fantastic and the service was excellent. I endorse their products and services to my personal and business contacts, and I will unquestionably get in touch with AMATAS Cleaning Company in the future for cleaning and maintenance needs.
+`,
     img: testimonial2,
   },
   {
@@ -94,7 +97,7 @@ export const testimonialsData = [
     suburb: "Hobart",
     state: "TAS",
     rating: 4,
-    feedback: `Whizz is my favourite app! Guaranteed an excellent clean every time! Super convenient as well, cleaners allocated within hours of `,
+    feedback: `Over the past six months, we've used AMATAS Cleaning Service Launceston frequently. Reliable. Professional. Friendly. Anish did a great job for us earlier. Highly RECOMMENDED`,
     img: testimonial3,
   },
   {
@@ -103,7 +106,7 @@ export const testimonialsData = [
     suburb: "Hobart",
     state: "TAS",
     rating: 4,
-    feedback: `I use Whizz for a regular weekly clean of my family home. Always arrives on time and completes all cleaning to a great standard.`,
+    feedback: ``,
     img: testimonial1,
   },
   {
@@ -112,7 +115,7 @@ export const testimonialsData = [
     suburb: "Hobart",
     state: "TAS",
     rating: 4,
-    feedback: `Whizz is my favourite app! Guaranteed an excellent clean every time! Super convenient as well, cleaners allocated within hours of `,
+    feedback: ``,
     img: testimonial4,
   },
   {
@@ -121,7 +124,7 @@ export const testimonialsData = [
     suburb: "Hobart",
     state: "TAS",
     rating: 4,
-    feedback: `Brilliant! Really quick and a good price for the quality. Carpet looks better than when we moved in, no stains or marks left! The staff are also really friendly. I'd use this company again for sure.`,
+    feedback: ``,
     img: testimonial2,
   },
   {
@@ -130,7 +133,7 @@ export const testimonialsData = [
     suburb: "Hobart",
     state: "TAS",
     rating: 4,
-    feedback: `Whizz is my favourite app! Guaranteed an excellent clean every time! Super convenient as well, cleaners allocated within hours of `,
+    feedback: ``,
     img: testimonial5,
   },
 ];

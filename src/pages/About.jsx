@@ -24,12 +24,14 @@ const About = () => {
         <span className="gradient-text primary-gradient-text">AMATAS</span>
       </h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quaerat
-        sequi est corrupti iste ratione, eum earum consequatur adipisci
-        eligendi, non nam recusandae vitae? Exercitationem quaerat nemo ipsam
-        beatae fuga harum placeat aliquid autem maxime illo animi praesentium
-        nostrum nam, natus porro deleniti culpa dolores laboriosam tempore error
-        provident reprehenderit?
+        The founder of the company, Anish Amatya, went from being an immigrant
+        working as a simple cleaner to an elite cleaning service Amatas Cleaning
+        Services. He founded Amatas Cleaning in 2018. Since then, his company
+        has been providing Tasmanian residents with excellent house cleaning
+        services. After ten years of hard work and dedication, Amatas cleaning
+        workers have proved to be one of the most top-rated professionals on the
+        market, bringing the company an outstanding reputation and only positive
+        feedback.
       </p>
       <div className="video">
         <video src={video} ref={vidRef} type="video/mp4" controls={false} />
