@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 import {
   FaMapMarkerAlt,
   FaFacebookF,
-  FaTwitter,
+  FaTiktok,
   FaUserAlt,
 } from "react-icons/fa";
 import { BsTelephoneFill } from "react-icons/bs";
@@ -113,18 +113,27 @@ const Contact = () => {
               <a
                 href="https://www.facebook.com/profile.php?id=100082801047101"
                 className="facebook"
+                target="_blank"
               >
                 <FaFacebookF />
               </a>
             </li>
             <li>
-              <a href="#" className="instagram">
+              <a
+                href="https://www.instagram.com/amatasservices/"
+                className="instagram"
+                target="_blank"
+              >
                 <RiInstagramFill />
               </a>
             </li>
             <li>
-              <a href="#" className="twitter">
-                <FaTwitter />
+              <a
+                href="https://vm.tiktok.com/ZS8yF9KRV/"
+                className="twitter"
+                target="_blank"
+              >
+                <FaTiktok />
               </a>
             </li>
           </ul>
